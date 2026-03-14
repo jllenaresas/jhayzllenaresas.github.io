@@ -115,7 +115,27 @@ transform: scale(1.1);
 transform:translateY(-5px);
 }
 
+.about-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 5%;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
 
+.about-image {
+  width: 30%;
+  height: auto;
+  min-height: 300px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.about-text {
+  flex: 1;
+  line-height: 1.7;
+}
 
 .skills {
   display: grid;
@@ -124,7 +144,6 @@ transform:translateY(-5px);
   justify-items: center;
   align-content: center;
   justify-content: center;
-
 }
 
 .skill-group {
@@ -230,6 +249,16 @@ footer{
   
   .skill-name {
     font-size: 13px;
+  }
+
+  .about-flex {
+    flex-direction: column;
+  }
+
+  .about-image {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 1.5rem auto;
   }
 }
 
